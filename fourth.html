@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Start</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .start-message {
+      font-size: 2rem;
+      opacity: 1;
+      transition: opacity 3s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="start-message" id="start-message">Start the game now</div>
+
+  <script>
+    // Wait for 3 seconds, then slowly hide the message
+    setTimeout(() => {
+      const message = document.getElementById("start-message");
+      message.style.opacity = 0;  // Fade out the text
+    }, 2000);
+  </script>
+</body>
+</html>

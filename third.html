@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Levels</title>
+    <link rel="stylesheet" href="style23.css">
+</head>
+<body>
+<section>
+    <div class="level-box">
+        <h2>Select the Level</h2>
+        <div class="button-container">
+            <button class="level-btn" onclick="startGame()">Level 1</button>
+            <button class="level-btn" onclick="startGame()">Level 2</button>
+            <button class="level-btn" onclick="startGame()">Level 3</button>
+            <button class="level-btn" onclick="startGame()">Level 4</button>
+            <button class="level-btn" onclick="startGame()">Level 5</button>
+        </div>
+        
+    </div>
+</section>
+
+<script>
+    
+    function startGame() {
+        window.location.href = "fourth.html"
+        let message = document.getElementById("game-message");
+        message.classList.remove("hidden"); // Show message
+        setTimeout(() => {
+            message.classList.add("fade-out"); // Fade out effect
+        }, 2000); // Delay before fading out
+    }
+</script>
+</body>
+</html>
